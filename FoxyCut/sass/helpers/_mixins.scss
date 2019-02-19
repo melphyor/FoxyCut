@@ -1,0 +1,30 @@
+@mixin flexBetween {
+    display: flex;
+    justify-content: space-between;
+}
+
+@mixin flexAround {
+    display: flex;
+    justify-content: space-around;
+}
+
+@mixin flexEvenly {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+@mixin flexStart {
+    display: flex;
+    justify-content: flex-start;
+}
+
+@mixin flexEnd {
+    display: flex;
+    justify-content: flex-end;
+}
+
+@mixin bgSettings {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}

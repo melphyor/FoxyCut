@@ -1,0 +1,94 @@
+// #page {
+//     max-width: 960px; padding: 0 15px; margin: 40px auto;
+//     @media (max-height: 790px) {
+//       margin-top: 0;
+//     }
+//   }
+//   .page-header h1 { 
+//       text-align: center; 
+//       font-weight: 100; }
+  
+//   .input, select {
+//     padding: 2px 5px;
+//   }
+//   .btn {
+//     padding: .2em .8em;
+//     border-radius: 4px;
+//     border: 1px solid #bcbcbc;
+//       box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+//       background-image: linear-gradient(180deg, rgba(255,255,255,1) 0%,rgba(239,239,239,1) 60%,rgba(225,223,226,1) 100%);
+//     background-repeat: no-repeat; // fix for firefox
+//   }
+  
+//   .bubble {
+//     box-shadow: 0 2px 4px rgba(0,0,0,.2); border-radius: 2px;
+//     background: #fff; padding: 15px;
+//     width: 420px;
+//     z-index: 99;
+//     position: absolute;
+  
+//     .close {
+//       position: absolute; font-size: 24px; line-height: 1;
+//       padding: 0 5px;
+//       right: 5px; top: 5px;
+//     }
+//   }
+  
+//   .bubble {
+//     border-color: #ccc;
+//     border: 1px solid #ccc;
+//     .arrow, .arrow:after {
+//       position: absolute; height: 0; width: 0; font-size: 0;
+//     }
+//     &-top, &-bottom {
+//       .arrow {
+//         left: 50%; margin-left: -10px;
+//       }
+//       .arrow:after {
+//         content: ''; left: -10px;
+//       }
+//     }
+//     &-top {
+//       .arrow {
+//         border-top: #ccc 10px solid; top: 100%;
+//       }
+//       .arrow:after {
+//         border-top: #FFF  10px solid; bottom: 1px;
+//       }
+//     }
+//     &-bottom {
+//       .arrow {
+//         border-bottom: #ccc 10px solid; bottom: 100%;
+//       }
+//       .arrow:after {
+//         border-bottom: #FFF  10px solid; top: 1px;
+//       }
+//     }
+//   }
+  
+  
+//   .form-group {
+//     .clearfix {
+//         clear: both;
+//     } 
+//     padding-bottom: 8px;
+//     &>label {
+//       float: left; width: 4em; text-align: right; padding-right: 5px;
+//     }
+//     &>input, &>.input-wrapper {
+//       margin-left: 4em;
+//       display: block;
+//     }
+//   }
+  
+  
+//   .btn-delete {
+//     margin-top: 5px;
+//     display: none;
+    
+//     &:hover {
+//       text-decoration: underline;
+//     }
+//   }
+  
+//   .usage { margin-top: 10px; }

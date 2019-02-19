@@ -1,0 +1,48 @@
+.workingHours {
+    @include flexAround;
+    flex-wrap: wrap;
+    background-image: url("../img/wisdomHair.jpg");
+    @include bgSettings;
+    min-height: 300px;
+
+   .circle {
+       width: 150px;
+       height: 150px;
+       background-color: $color-lightGrey;
+       border: 1px solid transparent;
+       border-radius: 50%;
+       text-align: center;
+       margin-top: 75px;  
+
+       .heading {
+            font-size: 2.5em;
+            margin-top: 25px;
+            text-transform: capitalize;
+       }
+
+       .times {
+            font-size: 1.25em;
+       }
+   } 
+}
+
+
+// MEDIA QUERY
+
+@media only all and (max-width: 1320px) {
+     .workingHours {      
+         .circle {
+             width: 125px;
+             height: 125px;
+      
+             .heading {
+                  font-size: 2em;
+                  margin-bottom: .25em;
+             }
+      
+             .times {
+                  font-size: 1em;
+             }
+         } 
+      }
+ }

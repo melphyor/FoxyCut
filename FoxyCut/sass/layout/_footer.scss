@@ -1,0 +1,72 @@
+footer {
+    color: $color-darkGrey;
+
+    .footerTop {
+        @include flexAround;
+        flex-wrap: wrap;
+        min-height: 300px;
+        background-color: $color-nearBlack;
+
+        .googlemap {
+            margin-left: 10%;
+
+           .map {
+            width: 300px;
+            height: 150px;
+            filter: grayscale(100%);
+            transition: all 0.5s ease-in-out 0s;
+
+                &:hover {
+                    filter: grayscale(0%);
+                }
+            } 
+        }
+
+        .address {
+            margin-left: 5%;
+
+            p {
+                line-height: 1.5em;
+            }
+
+            .contactIcon {
+                margin-right: .5em;
+            }
+        }
+
+        .social {
+            flex-grow: 2;
+            font-size: 1.5em;
+            text-align: center;
+
+            .socialIcon {
+                margin: 0 30px 0 30px;
+                line-height: 300px;
+                transition: all 0.3s ease-in-out 0s;
+
+                &:hover {
+                    color: $color-lightGrey;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    .footerBottom {
+        width: 100%;
+        height: 30px;
+        background-color: $color-black;
+        text-align: center;
+        font-size: .75em;
+        line-height: 30px;
+        font-weight: 600;
+    }
+}
+
+.heading2 {
+    font-size: 2em;
+    margin: 30px 0 30px 0;
+}
+
+
+

@@ -1,0 +1,221 @@
+.header {
+    position: relative;
+    text-transform: capitalize;
+
+    .right {
+        width: 50%;
+        height: 100vh;
+        float: right;
+        position: relative;
+
+        .pic3 {
+            background-image: url("../img/redLips.jpg");
+            @include bgSettings;
+            width: 50vw;
+            height: 50vh;
+            clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%); 
+        }
+        
+        .pic4 {
+            background-image: url("../img/musicGirl.jpg");
+            @include bgSettings;
+            width: 50vw;
+            height: 50vh;
+            clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
+            margin-top: -35px;
+        }       
+    }
+
+    .right:after {
+        content: '';
+        position: absolute;
+        width: 49.1vw;
+        height: 96.25vh;
+        top: 0; 
+        right: 0;
+        background: rgba(0,0,0,0.6);
+        opacity: 0;
+        transition: all 0.5s;        
+    }
+
+    .right:hover:after {
+        opacity: 1;
+    }
+
+    .left {
+        width: 50%;
+        height: 100vh;
+
+        .pic1 {
+            background-image: url("../img/whiteGirl.jpg");
+            @include bgSettings;
+            width: 50vw;
+            height: 50vh;
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+        }
+        
+        .pic2 {
+            background-image: url("../img/windHair.jpg");
+            @include bgSettings;
+            width: 50vw;
+            height: 50vh;
+            clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
+            margin-top: -35px;
+        }
+    }
+
+    .left:after {
+        content: '';
+        position: absolute;
+        width: 50vw;
+        height: 96.25vh;
+        top: 0; 
+        left: 0;
+        background: rgba(0,0,0,0.6);
+        opacity: 0;
+        transition: all 0.5s;        
+    }
+
+    .left:hover:after {
+        opacity: 1;
+    }
+
+    .logo2 {
+        font-size: 7em;
+        font-weight: 600;
+        position: absolute;
+        top: 40%;
+        left: 40%;
+        text-shadow: 5px 10px 15px rgba(255, 255, 255, 0.5); 
+
+
+        img {
+            width: 50px;
+            height: 85px;
+            transform: rotate(135deg);
+            margin: 0 -20px 0 -30px;
+        }
+
+        .cut {
+            font-family: 'Herr Von Muellerhoff', cursive;
+            letter-spacing: 0.2em;
+            font-size: .7em;
+        }
+
+        .description {
+            font-size: .2em;
+            font-weight: 400;
+            letter-spacing: 0.2em;
+            margin: -20px 0;
+        }
+    }
+}
+
+.header {
+    .right {
+        .animation {
+            visibility: hidden;
+
+            .word1 {
+                position: absolute;
+                top: 0;
+                right: 45%;
+                font-size: 2em;
+            }
+
+            .word2 {
+                position: absolute;
+                bottom: 5%;
+                right: 45%;
+                font-size: 5em;
+            }
+        }
+    }
+
+    .right:hover {
+        .animation {
+            visibility: visible;
+
+            .word1 {
+                animation-name: animationTop;
+                animation-duration: 1s;
+                animation-timing-function: ease-out;
+                animation-fill-mode: forwards;
+                z-index: 1;
+            }
+
+            @keyframes animationTop {
+                from {top: 0px; color: $color-nearBlack;}
+                to  {top: 50vh; color: $color-white;}
+            }
+
+            .word2 {
+                animation-name: animationBottom;
+                animation-duration: 1s;
+                animation-timing-function: ease-out;
+                animation-fill-mode: forwards;
+                z-index: 1;
+            }
+
+            @keyframes animationBottom {
+                from {bottom: 0px; color: $color-nearBlack;}
+                to  {bottom: 50vh; color: $color-white;}
+            }
+        }
+    }
+}
+
+.header {
+    .left {
+        .animation2 {
+            visibility: hidden;
+
+            .word1 {
+                position: absolute;
+                top: 0;
+                left: 45vh;
+                font-size: 2em;
+            }
+
+            .word2 {
+                position: absolute;
+                bottom: 5%;
+                left: 45vh;
+                font-size: 5em;
+            }
+        }
+    }
+
+    .left:hover {
+        .animation2 {
+            visibility: visible;
+
+            .word1 {
+                animation-name: animationTop;
+                animation-duration: 1s;
+                animation-timing-function: ease-out;
+                animation-fill-mode: forwards;
+                z-index: 1;
+            }
+
+            @keyframes animationTop {
+                from {top: 0px; color: $color-nearBlack;}
+                to  {top: 50vh; color: $color-white;}
+            }
+
+            .word2 {
+                animation-name: animationBottom;
+                animation-duration: 1s;
+                animation-timing-function: ease-out;
+                animation-fill-mode: forwards;
+                z-index: 1;
+            }
+
+            @keyframes animationBottom {
+                from {bottom: 0px; color: $color-nearBlack;}
+                to  {bottom: 50vh; color: $color-white;}
+            }
+        }
+    }
+}
+

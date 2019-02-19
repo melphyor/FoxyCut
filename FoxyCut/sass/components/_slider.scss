@@ -1,0 +1,69 @@
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 1rem;
+    left: -4rem;
+    width: 45px;
+    height: 45px;
+    border: 1px solid $color-white;
+    border-radius: $cornerRadius;
+    text-align: center;
+    background-color: $color-white;
+    color: $color-nearBlack;
+    font-size: 1.5em;
+    line-height: 45px;
+    transition: .6s ease;
+    user-select: none;
+}
+
+.next {
+    left: -1rem;
+}
+
+.prev:hover, .next:hover {
+    border: 1px solid $color-lightGrey;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+  
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+  
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+.image.one {
+    background-image: url("../img/stylist1.jpg");
+}
+
+.image.two {
+    background-image: url("../img/stylist2.jpg");
+}
+
+.image.three {
+    background-image: url("../img/stylist3.jpg");
+}
+
+
+// MEDIA QUERY
+
+@media only all and (max-width: 600px) {
+    .prev, .next {
+        top: 2rem;
+        left: 40%
+    }
+    
+    .next {
+        left: 50%;
+    }
+}
