@@ -3,7 +3,7 @@ Hairdresser web
 
 !!! IMPORTANT !!!
 Probably you will need to refresh the page/page parts few time with Ctrl+F5 to load it properly. Hosting is free that is why occasionally it is not loading properly from the first time.
-foxycut.cf <--- 
+www.foxycut.cf <--- 
 
 Login: admin
 Password: admin
