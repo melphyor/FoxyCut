@@ -19,14 +19,14 @@ Users:
 Admins:
 1. Login using admin/admin as login/password
 
------- To Book -------
-2. Complete all the steps provided above in Users section
+2. ------ To Book -------
+3. Complete all the steps provided above in Users section
 
------- To see Clients Details / To Delete ------
-3. Click on Busy time slot
-4. New module will be opened with user details.
-5. Click Delete button
-OR
-6. Simply click on Delete icon in Busy time slot
+4. ------ To see Clients Details / To Delete ------
+5. Click on Busy time slot
+6. New module will be opened with user details.
+7. Click Delete button
+8. OR
+9. Simply click on Delete icon in Busy time slot
 
 
